@@ -1,0 +1,23 @@
+# Criar Asset
+POST http://localhost:3000/api/assets
+Content-Type: application/json
+
+{
+  "symbol": "AAPL"
+}
+
+### Listar Assets
+GET http://localhost:3000/api/assets
+
+### Criar Order
+POST http://localhost:3000/api/orders
+Content-Type: application/json
+
+{
+  "asset_id": 1,
+  "price": 150.0,
+  "status": "open"
+}
+
+### Listar Orders
+GET http://localhost:3000/api/orders
